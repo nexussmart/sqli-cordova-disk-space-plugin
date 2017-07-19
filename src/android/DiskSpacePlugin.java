@@ -51,6 +51,8 @@ public class DiskSpacePlugin extends CordovaPlugin {
             String packageName = this.cordova.getActivity().getPackageName();
             File appDir = null;
 
+            // fix here 
+
             if (location == 1) {
                 statFs = new StatFs(Environment.getExternalStorageDirectory().getAbsolutePath());
                 appDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "Android" + File.separator + "data" + File.separator + packageName + File.separator + "files");
